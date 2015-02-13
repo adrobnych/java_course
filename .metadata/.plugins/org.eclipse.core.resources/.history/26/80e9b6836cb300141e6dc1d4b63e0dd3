@@ -1,0 +1,16 @@
+
+public class CarFactory {
+
+	public static void main(String[] args) {
+		
+		Car firstCar = buildNewCar();
+		System.out.println(firstCar.describeYourself());
+
+	}
+
+	private static Car buildNewCar() {
+		Car result = new Car("Ford", "fusion", 160);
+		return result;
+	}
+
+}

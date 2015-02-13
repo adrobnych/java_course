@@ -1,0 +1,8 @@
+
+public interface abilityToFlight {
+	
+	public void startFlight();
+	
+	public void stopFlight();
+
+}

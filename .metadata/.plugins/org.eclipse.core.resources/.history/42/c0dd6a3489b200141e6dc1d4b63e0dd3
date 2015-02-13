@@ -1,0 +1,22 @@
+
+public class CarFactory {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Car firstCar = buildNewCar();
+		firstCar.describeYourself();
+
+	}
+
+	private static Car buildNewCar() {
+		Car result = new Car();
+		result.brand = "Ford";
+		result.model = "fusion";
+		result.maxSpeed = 160;
+		return result;
+	}
+
+}

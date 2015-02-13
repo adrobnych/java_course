@@ -1,0 +1,41 @@
+
+public class LearnVariables {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	
+			int x = 10;
+			System.out.println("primitive variable: " + x);
+			
+			
+			Integer Xobj = new Integer(100);
+			System.out.println("object variable: " + Xobj);
+			
+			
+			//byte  char short int long float double    
+			 
+			int y  = x;
+			
+			x = 20;
+			
+			System.out.println("primitive variable y:  " + y);
+			
+			
+			StringBuffer a = new StringBuffer("first");
+			
+			StringBuffer b = a;
+			
+			a.append(" new data");
+			
+			
+			
+			System.out.println("object variable b: " + b);
+			
+			
+			
+
+	}
+
+}

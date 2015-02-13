@@ -1,0 +1,28 @@
+class Car{
+	String model;
+	String brand;
+	int numberOfSeats;
+	float price;
+	
+	public void startEngine(){
+		System.out.println("Engine started: " + model);
+	}
+}
+
+
+
+public class OOP {
+
+
+	public static void main(String[] args) {
+		
+		Car my_mashine = new Car();
+		my_mashine.model = "Ford Fusion";
+		my_mashine.brand = "Ford";
+		my_mashine.numberOfSeats = 4;
+		my_mashine.price = 2000;
+		my_mashine.startEngine();
+
+	}
+
+}

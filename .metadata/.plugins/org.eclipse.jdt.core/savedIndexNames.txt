@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+/home/adrobnych/univ/java_code/.metadata/.plugins/org.eclipse.jdt.core
+2985286455.index
+1332658570.index
+3193546935.index
+793669427.index
+736068086.index

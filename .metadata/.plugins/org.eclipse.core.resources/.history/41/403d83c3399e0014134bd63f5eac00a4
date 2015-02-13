@@ -1,0 +1,74 @@
+class Car implements TankFiller{
+	String model;
+	String brand;
+	int numberOfSeats;
+	double price;
+	
+	Car(){
+		model = "NA";
+		brand = "NA";
+		numberOfSeats = 4;
+		price = 0;
+	}
+	
+	Car(String model, String brand, double price){
+		this.model = model;
+		this.brand = brand;
+		this.numberOfSeats = 4;
+		this.price = price;
+	}
+	
+	public void startEngine(){
+		System.out.println("Engine started: " + brand + " " + model);
+	}
+	
+	public void describeCar(){
+		System.out.println(	"model: " + model + "\n" +
+							"brand: " + brand + "\n" +
+							"seats: " + numberOfSeats + "\n" +
+							"price: " + price);
+	}
+}
+
+class GasTransporter extends Car{
+	
+	int volume;
+	
+	GasTransporter(String model, String brand, double price, int volume){
+		super(model,brand,price);
+		this.volume = volume;
+		this.numberOfSeats = 2;
+	}
+	
+	public void describeCar(){
+		super.describeCar();
+		System.out.println("Volume: " + volume);
+	}
+	
+}
+
+interface TankFiller{
+	public void fillTank();
+}
+
+
+
+public class OOP {
+
+
+	public static void main(String[] args) {
+		
+		// basic work with Classes and Objects
+		
+		Car my_mashine = new Car("Fusion", "Ford", 2000.0);
+		my_mashine.describeCar();
+		my_mashine.startEngine();
+		
+		GasTransporter gt = new GasTransporter("hercules 322", "Ford", 34000, 1000);
+		gt.describeCar();
+		gt.startEngine();
+		
+
+	}
+
+}

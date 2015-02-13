@@ -1,0 +1,16 @@
+
+public class Car {
+	
+	String brand;
+	String model;
+	int maxSpeed;
+	
+	public String describeYourself(){
+		StringBuffer info = new StringBuffer("");
+		info.append(brand + "\n");
+		info.append(model+ "\n"));
+		info.append("maxSpeed: " + maxSpeed);
+		return info.toString();
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class CarFactory {
+
+	public static void main(String[] args) {
+		
+		Car firstCar = new Car("Ford", "fusion", 160);
+		System.out.println(firstCar.describeYourself());
+		
+		Car secondCar = new RaceCar("Ferrary", "fg5858", 360, "Malboro");
+		System.out.println(secondCar.describeYourself());
+		
+		Car car3 = new BatMobile("BatMobile", "1", 560);
+		System.out.println(car3.describeYourself());
+		car3.
+
+	}
+
+
+}

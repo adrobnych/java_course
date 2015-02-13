@@ -1,0 +1,35 @@
+import java.awt.List;
+import java.util.LinkedList;
+
+
+public class Arrays {
+
+	public static void main(String[] args) {
+		
+		// Array
+		
+		int[] ages = new int[100];
+		
+		for(int i=0; i<100; i++){
+			ages[i] = i;
+		}
+		
+		
+		for(int i=0; i<100; i++){
+			System.out.println(ages[i]);
+		}
+		
+		// List
+		
+		LinkedList l = new LinkedList();
+		l.add("monday");
+		l.add("tuesday");
+		l.add("wednesday");
+		l.add("thursday");
+		
+		for(int i=0; i<l.getItemCount(); i++){
+			System.out.println(l.getItem(i));
+		}
+	}
+
+}

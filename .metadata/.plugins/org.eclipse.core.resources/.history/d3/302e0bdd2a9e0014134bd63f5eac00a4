@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+
+class Greeting {
+	
+	private static Scanner scan;
+	
+	public static void main(String[] args) {
+		
+		scan = new Scanner(System.in);
+		
+		Greeting greet = new Greeting();
+		System.out.println("Hello " + greet.askName());
+		
+		greet.explainWork();
+		
+		int height = 0;
+		
+		while(height == 0){
+
+			try{
+				height = greet.getHeight();
+			}
+			catch(Exception e){
+				System.out.println("SORRY BUT YOU HAVE TO ENTER DIGIT !" );
+			}
+		}
+		
+		System.out.println("height debug: " + height);
+		
+		scan.close();
+
+	}
+	
+	
+	private int getHeight() {
+		System.out.println("What's your height?");
+		int height = scan.nextInt();
+		scan.reset();
+		return height;
+	}
+
+
+	private void explainWork() {
+		System.out.println("We will estimate your weight and heigth and recomment some diet");
+	}
+
+
+	private String askName(){
+		System.out.println("Hello User, what's your name?");
+		String name = scan.nextLine();				
+		return name;
+	}
+
+}
+
+
+
+

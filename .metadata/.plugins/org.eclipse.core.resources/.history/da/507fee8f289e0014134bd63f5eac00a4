@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+
+class Greeting {
+	
+	public static void main(String[] args) {
+		
+		Greeting greet = new Greeting();
+		System.out.println("Hello " + greet.askName());
+		
+		greet.explainWork();
+		
+		int height = greet.getHeight();
+		
+		System.out.println("height debug: " + height);
+
+	}
+	
+	
+	private int getHeight() {
+		System.out.println("What's your height?");
+		Scanner scan = new Scanner(System.in);
+		int height = new Integer(scan.nextLine());
+		scan.close();
+		return height;
+	}
+
+
+	private void explainWork() {
+		System.out.println("We will estimate your weight and heigth and recomment some diet");
+	}
+
+
+	private String askName(){
+		System.out.println("Hello User, what's your name?");
+		Scanner scan = new Scanner(System.in);
+		String name = scan.nextLine();
+		scan.reset();
+		scan.close();
+		return name;
+	}
+
+}
+
+
+
+
